@@ -10,7 +10,7 @@ module.exports= function(app,passport,db){
       res.send(result)
     })
   })
-  //using query paramter like we did basic node
+  //query parameter
   app.post("/account", (req, res) => {
     db.collection('new')
     .save({name: req.body.name, current: Number(req.body.current),transactions:[["Deposit:",Number(req.body.current)]]}, (err, result) => {
@@ -19,7 +19,7 @@ module.exports= function(app,passport,db){
       res.redirect('/profile')
     })
   })
-  //saving req.body.name, deposit amount, and array with the initial deposit as first index
+  //saving req.body.name,
   app.put('/account', (req, res) => {
     if("deposit" in req.body){
       db.collection('new')
@@ -49,9 +49,9 @@ module.exports= function(app,passport,db){
       })
     }
   })
-  //first time using if() logic in app.post/put sucessfully
+  
   //two fetches with main.js and checking for the withdraw/deposit property for the two puts and executes the proper put using if()
-  //used increment and push instead of set, increment adds the value to the property while push appends to the array, first index will not be altered from post because it is being pushed and not altering or setting
+  
   app.delete('/account', (req, res) => {
     db.collection('new').findOneAndDelete({name: req.body.name}, (err, result) => {
       if (err) return res.send(500, err)
@@ -59,7 +59,6 @@ module.exports= function(app,passport,db){
     })
   });
   //delete method using the account name pulling from a data attribute for each account
-  //tried using req.body._id but couldn't pull it from data attribute
   
   app.get('/profile', isLoggedIn, function(req, res) {
       db.collection('new').find().toArray((err, result) => {
@@ -72,6 +71,7 @@ module.exports= function(app,passport,db){
   });
 
   // LOGOUT ==============================
+  // kept this api from boiler plate
   app.get('/logout', function(req, res) {
       req.logout();
       res.redirect('/');
@@ -104,6 +104,6 @@ module.exports= function(app,passport,db){
           return next();
 
       res.redirect('/');
-  }
+    }
 
-}
+}//
