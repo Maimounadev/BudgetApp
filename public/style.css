@@ -26,6 +26,10 @@ h3 {
   color: #e60073;
   font-size: 24px;
 }
+span {
+font-size: 20px;
+color: #e60073;
+}
 
 input[type="text"],
 input[type="number"],
