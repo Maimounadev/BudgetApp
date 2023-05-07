@@ -1,0 +1,101 @@
+
+
+body {
+  background-color: #ffe6f2;
+  font-family: "Arial", sans-serif;
+}
+
+
+.page-header h1 {
+  color: #e60073;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+
+.logout {
+  color: #e60073;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #e60073;
+  font-size: 24px;
+}
+
+input[type="text"],
+input[type="number"],
+button[type="submit"] {
+  border-radius: 20px;
+  border: 1px solid #e60073;
+  padding: 10px;
+  font-size: 16px;
+  color: #e60073;
+}
+
+button[type="submit"] {
+  background-color: #e60073;
+  color: #fff;
+}
+
+
+.remaining {
+  margin-top: 20px;
+}
+
+.remaining .message {
+  border: none;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.remaining .name {
+  color: #e60073;
+  font-weight: bold;
+}
+
+.remaining .current {
+  float: right;
+  color: #e60073;
+  font-weight: bold;
+}
+
+.remaining .trans {
+  margin: 5px 0;
+}
+
+
+.deletebtn {
+  color: #e60073;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.instruction {
+  color: #e60073;
+  font-style: italic;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  button[type="submit"] {
+    font-size: 14px;
+  }
+}
