@@ -31,12 +31,12 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CodingwithKarim/FinanceTracker"
+    "url": "https://github.com/maimounadev/budgetapp"
   },
-  "homepage": "https://github.com/CodingwithKarim/FinanceTracker#readme",
+  "homepage": "",
   "description": "<p align=\"center\"><img src=\"public/img/financetracker.png\" height=300px></p>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CodingwithKarim/FinanceTracker.git"
+    "url": ""
   }
 }
