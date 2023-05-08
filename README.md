@@ -1,2 +1,2 @@
 # BudgetApp
-simple app for money management
+simple app for money management/ personal bank  
